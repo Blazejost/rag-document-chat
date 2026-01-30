@@ -191,7 +191,7 @@ uv run pytest tests/test_app.py -v
 
 This project includes GitHub Actions for continuous integration:
 
-[![CI/CD](./cidi.png)
+![CI/CD](./cidi.png)
 
 ### Pipeline Jobs
 
