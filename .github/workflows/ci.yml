@@ -21,21 +21,15 @@ jobs:
         python-version: '3.12'
     
     - name: Install uv
-      uses: astral-sh/setup-uv@v4
-      with:
-        version: "latest"
+      uses: astral-sh/setup-uv@v5
     
     - name: Install dependencies
-      run: uv sync --dev
+      run: uv sync --all-extras
     
     - name: Run tests
       run: uv run pytest tests/ -v --tb=short
       env:
         GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
-    
-    - name: Run linting (optional)
-      run: uv run ruff check . || true
-      continue-on-error: true
 
   # Job 2: Build Docker image
   build:
