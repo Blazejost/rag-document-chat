@@ -7,8 +7,7 @@
 
 > **An intelligent RAG (Retrieval-Augmented Generation) application that lets you chat with your PDF documents using Google Gemini AI.**
 
-![RAG App Screenshot](https://via.placeholder.com/800x400/1e1e2e/667eea?text=RAG+Document+Chat+Interface)
-
+![RAG App Screenshot](./rag.png)
 ## 🎯 Overview
 
 This project implements a production-ready **Retrieval-Augmented Generation (RAG)** system that allows users to:
@@ -192,7 +191,7 @@ uv run pytest tests/test_app.py -v
 
 This project includes GitHub Actions for continuous integration:
 
-[![CI/CD](https://github.com/yourusername/rag-document-chat/actions/workflows/ci.yml/badge.svg)](https://github.com/yourusername/rag-document-chat/actions)
+[![CI/CD](./cidi.png)
 
 ### Pipeline Jobs
 
